@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Main */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.body {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    text-align: center;
+}
+
+.clock {
+    width: 20rem;
+    height: 20rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 1rem;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px)
+}
+
+.hand {
+    width: 50%;
+    height: 5px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    border-radius: 10px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all .05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1)
+}
+
+.hour-hand {
+    height: 18px;
+    background: grey;
+    opacity: .7;
+}
+
+.min-hand {
+    height: 7px;
+    background: black;
+    opacity: .8;
+}
+
+.second-hand {
+    height: 3px;
+    background: maroon;
+
+}
