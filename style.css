@@ -67,7 +67,7 @@ html {
 .hour-hand {
     background: grey;
     opacity: .9;
-    z-index: 3;
+    z-index: 1;
 }
 
 .min-hand {
@@ -78,6 +78,6 @@ html {
 
 .second-hand {
     height: 2px;
-    background: maroon;
-    z-index: 1;
+    background: rgb(206, 9, 9);
+    z-index: 3;
 }
