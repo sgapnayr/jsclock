@@ -58,13 +58,13 @@ html {
     transform-origin: 100%;
     transform: rotate(90deg);
     transition: all .05s;
-    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1)
+    transition-timing-function: cubic-bezier(0.1, 0, 0.58, 1)
 }
 
 .hour-hand {
     height: 18px;
     background: grey;
-    opacity: .7;
+    opacity: .9;
     z-index: 3;
 }
 
